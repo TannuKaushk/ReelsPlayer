@@ -1,0 +1,6 @@
+framework module Pods_TikTok_TikTokUITests {
+  umbrella header "Pods-TikTok-TikTokUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

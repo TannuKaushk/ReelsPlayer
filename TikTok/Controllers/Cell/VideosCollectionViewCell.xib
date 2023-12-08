@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="VideosCollectionViewCell" id="gTV-IL-0wX" customClass="VideosCollectionViewCell" customModule="TikTok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEU-Tx-HkH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVB-eY-uiX" customClass="VideoPlayerView" customModule="GSPlayer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="h7f-pP-eML">
+                                <rect key="frame" x="314.5" y="476.5" width="40.5" height="191.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgy-L9-Pg0">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="37"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="person.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="small"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDP-Y9-gbY">
+                                        <rect key="frame" x="0.0" y="53" width="40.5" height="38"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="message" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="small"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9l-r2-Een">
+                                        <rect key="frame" x="0.0" y="107" width="40.5" height="34"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="heart" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="small"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gZ-t8-MUF">
+                                        <rect key="frame" x="0.0" y="157" width="40.5" height="34.5"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="arrowshape.turn.up.right" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="small"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-ZG-1re">
+                                <rect key="frame" x="162.5" y="360.5" width="50" height="46.5"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="0.67723235069999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JEr-tb-4ie"/>
+                                    <constraint firstAttribute="width" constant="50" id="yb4-Np-cjX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G0w-iP-c7m"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="h7f-pP-eML" secondAttribute="bottom" constant="100" id="24X-li-bD2"/>
+                            <constraint firstAttribute="trailing" secondItem="iVB-eY-uiX" secondAttribute="trailing" id="68b-zD-rs4"/>
+                            <constraint firstAttribute="bottom" secondItem="iVB-eY-uiX" secondAttribute="bottom" id="7OM-b0-J6s"/>
+                            <constraint firstItem="iVB-eY-uiX" firstAttribute="leading" secondItem="dEU-Tx-HkH" secondAttribute="leading" id="97Z-Ke-lWv"/>
+                            <constraint firstItem="FUa-ZG-1re" firstAttribute="centerX" secondItem="dEU-Tx-HkH" secondAttribute="centerX" id="Hgm-Zu-PQw"/>
+                            <constraint firstItem="iVB-eY-uiX" firstAttribute="top" secondItem="dEU-Tx-HkH" secondAttribute="top" id="ROB-dh-iII"/>
+                            <constraint firstItem="FUa-ZG-1re" firstAttribute="centerY" secondItem="dEU-Tx-HkH" secondAttribute="centerY" id="toY-wS-qJR"/>
+                            <constraint firstAttribute="trailing" secondItem="h7f-pP-eML" secondAttribute="trailing" constant="20" id="ySQ-OT-uCU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dEU-Tx-HkH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="33X-6M-JUq"/>
+                <constraint firstAttribute="trailing" secondItem="dEU-Tx-HkH" secondAttribute="trailing" id="FsJ-hg-KAO"/>
+                <constraint firstAttribute="bottom" secondItem="dEU-Tx-HkH" secondAttribute="bottom" id="fEd-ya-owB"/>
+                <constraint firstItem="dEU-Tx-HkH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="x0u-B8-fpp"/>
+            </constraints>
+            <size key="customSize" width="375" height="768"/>
+            <connections>
+                <outlet property="playImg" destination="FUa-ZG-1re" id="zOI-EJ-t4C"/>
+                <outlet property="playerView" destination="iVB-eY-uiX" id="PTu-Y5-zXe"/>
+            </connections>
+            <point key="canvasLocation" x="200.72463768115944" y="657.58928571428567"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="104"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
