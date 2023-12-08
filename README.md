@@ -11,7 +11,7 @@ This repository contains a demo of a Reels feature view. The Reels feature view 
 ![ReelsDemo](https://github.com/TannuKaushk/ReelsPlayer/assets/68506215/65cab2b1-68bc-418c-9faf-eb009c48090e)
 
 ## Feautres
-** Displaying Videos **
+**Displaying Videos**
 * View a list of videos in a scrollable Reels feature view.
 * Each video is displayed with its cover image and play functionality.
 * Tap to play/pause the video content.
